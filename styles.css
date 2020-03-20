@@ -9,8 +9,11 @@ body {
 }
 
 header {
-    max-height: 500px;
-    color: black;
+    color: white !important;
+    background: #7E0C16;
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: left;
 }
 
 .mainImage {
@@ -19,4 +22,5 @@ header {
 
 #headerGrapefruit {
     margin-right: 10px;
+    max-height: 200px;
 }
