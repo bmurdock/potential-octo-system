@@ -21,6 +21,19 @@ main {
     text-align: center;
 }
 
+nav {
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+nav>a {
+    color: #D7C8C2;
+    text-decoration: none;
+
+}
+
 .mainImage {
     max-width: 500px;
 }
