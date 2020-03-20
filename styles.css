@@ -1,3 +1,22 @@
 p {
     font-size: 20pt;
 }
+
+body {
+    margin: 1em;
+    color: white;
+    background-color: black;
+}
+
+header {
+    max-height: 500px;
+    color: black;
+}
+
+.mainImage {
+    max-width: 500px;
+}
+
+#headerGrapefruit {
+    margin-right: 10px;
+}
