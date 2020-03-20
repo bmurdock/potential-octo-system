@@ -17,6 +17,10 @@ header {
     justify-content: left;
 }
 
+main {
+    text-align: center;
+}
+
 .mainImage {
     max-width: 500px;
 }
