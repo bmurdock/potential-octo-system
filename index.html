@@ -16,7 +16,7 @@
     <header style="color: red">
         <img id="headerGrapefruit" class="mainImage"
             src="https://images.squarespace-cdn.com/content/v1/59bbae5403596eb137858cb5/1544198713786-HYIIEL44CA376XO1CS4A/ke17ZwdGBToddI8pDm48kO6t_FIigFZlD-2ukJs68NZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdQnRCmyfmE32mt8hf8jTbpNOvskeoRv-ygqK_y0NLe3pygZMNSAPtQr-kV0SxGO-A/Grapefruit.jpg" />
-        <h1>Grapefruit</h1>
+        <h1 id="pageTitle">Grapefruit</h1>
         <nav>
             <a id="googleLink" href="https://www.google.com/">Google</a>
             <a href="page.html">Another Page</a>
@@ -24,9 +24,21 @@
         <script>
             let gLink = document.getElementById('googleLink');
 
-            gLink.addEventListener('click', (event) => {
+            // common mistake people make
+            // execute the function immediately by
+            // adding () to the end of it
+            gLink.addEventListener('click', myFunction);
+
+            function myFunction(event) {
                 event.preventDefault();
                 console.log('You clicked the link.');
+            }
+
+
+            // Change the title color
+            let title = document.getElementById('pageTitle');
+            title.addEventListener('click', function (event) {
+                title.style.color = 'pink';
             });
         </script>
 
